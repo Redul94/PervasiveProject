@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PervasiveProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="redul_details">
+        \nName : Redul Hossen
+        \nAge : 22
+        \nEmail: redul15-3193@diu.edu.bd
+    </string>
+    <string name="mehedi_details">
+        \nName : Md Mehedi Hasan
+        \nAge : 22
+        \nEmail: mehedi15-3911@diu.edu.bd
+    </string>
+    <string name="sifat_details">
+        \nName : Md Sifat Ullah
+        \nAge : 22
+        \nEmail: sifat15-3402@diu.edu.bd
+    </string>
+</resources>
