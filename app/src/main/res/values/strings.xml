@@ -17,4 +17,13 @@
         \nAge : 22
         \nEmail: sifat15-3402@diu.edu.bd
     </string>
+    <string-array name="spinner">
+        <item> </item>
+        <item>Basic Cal</item>
+        <item>Scientific Cal</item>
+        <item>Quiz App</item>
+        <item>BMI Cal</item>
+        <item>USD to BDT</item>
+    </string-array>
+
 </resources>
