@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="40sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="What is 44+7" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/q2Radiogrp"
+        android:onClick="q2RadioFunction"
+        >
+        <RadioButton
+            android:id="@+id/radioButtonQ1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="51" />
+
+        <RadioButton
+            android:id="@+id/radioButton2Q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="55" />
+
+        <RadioButton
+            android:id="@+id/radioButton3Q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="52" />
+
+        <RadioButton
+            android:id="@+id/radioButton4Q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="49" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonQ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="q2PreFunction"
+            android:layout_marginRight="10sp"
+            android:text="Pre" />
+
+        <Button
+            android:id="@+id/button2Q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="q2NextFunction"
+            android:layout_marginLeft="10sp"
+            android:text="Next" />
+    </LinearLayout>
+
+</LinearLayout>

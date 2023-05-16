@@ -33,6 +33,16 @@ public class MainActivity2 extends AppCompatActivity  {
                     startActivity(intent);
 
                 }
+                else if (id==2) {
+                    Intent intent = new Intent(getApplicationContext(), ScientificCalActivity3.class);
+                    startActivity(intent);
+
+                }
+                else if (id==3) {
+                    Intent intent = new Intent(getApplicationContext(), QuizActivity3.class);
+                    startActivity(intent);
+
+                }
 
             }
 
