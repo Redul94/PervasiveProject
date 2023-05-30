@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "258025269717",
+    "project_id": "pervasiveproject-56b4e",
+    "storage_bucket": "pervasiveproject-56b4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258025269717:android:5a9b2847a72d4f4698b55c",
+        "android_client_info": {
+          "package_name": "com.example.pervasiveproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALxTg6GKmcPFRmJPoOUkPQqvzO9q2LKnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
