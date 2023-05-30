@@ -12,6 +12,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
     private ListView listView;
 
@@ -20,11 +23,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String[] name = {"Redul Hossen", "Md. Mehedi Hasan", "Md Sifat Ullah"};
+        String[] name = {"Author's details"};
+
         listView = findViewById(R.id.listViewId);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, name);
         listView.setAdapter(adapter);
+        loadFragment(new RedulFragment());
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -35,14 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     loadFragment(new RedulFragment());
                 }
-                else if (id==1)
-                {
-                    loadFragment(new MehediFragment());
-                }
-                else if (id==2)
-                {
-                    loadFragment(new SifatFragment());
-                }
+
             }
         });
 

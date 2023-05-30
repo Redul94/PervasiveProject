@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,26 +14,57 @@
         android:theme="@style/Theme.PervasiveProject"
         tools:targetApi="31">
         <activity
-            android:name=".QuizRsultActivity3"
+            android:name=".FirebaseActivity3"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".UsdToBdtActivity3"
+            android:exported="false"
+            android:parentActivityName=".MainActivity2" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
+        <activity
+            android:name=".BmiActivity3"
+            android:exported="false"
+            android:parentActivityName=".MainActivity2" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
+        <activity
+            android:name=".QuizRsultActivity3"
+            android:exported="false"
+            android:parentActivityName=".MainActivity2" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
         <activity
             android:name=".QuizPage1Activity3"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false"
+            android:parentActivityName=".MainActivity2" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
         <activity
             android:name=".QuizActivity3"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false"
+            android:parentActivityName=".MainActivity2" />
+
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+
         <activity
             android:name=".ScientificCalActivity3"
             android:exported="false"

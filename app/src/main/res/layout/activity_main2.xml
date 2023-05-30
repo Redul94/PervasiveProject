@@ -7,12 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2"
     android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select one option"
+        android:layout_gravity="center"
+        android:paddingLeft="80sp"
+        />
     <Spinner
         android:spinnerMode="dropdown"
 
         android:id="@+id/spinnerId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Page"
+        android:onClick="backFunction"
+        />
 
 
 

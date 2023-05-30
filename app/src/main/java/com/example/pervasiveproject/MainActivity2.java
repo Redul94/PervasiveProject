@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity  {
     Spinner spinner;
@@ -43,12 +44,28 @@ public class MainActivity2 extends AppCompatActivity  {
                     startActivity(intent);
 
                 }
+                else if (id==4) {
+                    Intent intent = new Intent(getApplicationContext(), BmiActivity3.class);
+                    startActivity(intent);
+
+                }
+                else if (id==5) {
+                    Intent intent = new Intent(getApplicationContext(), UsdToBdtActivity3.class);
+                    startActivity(intent);
+
+                }
+                else if (id==6) {
+                    Intent intent = new Intent(getApplicationContext(), FirebaseActivity3.class);
+                    startActivity(intent);
+
+                }
 
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
                 Log.i("A","NOthing selected");
+                Toast.makeText(MainActivity2.this, "Please select one option", Toast.LENGTH_SHORT).show();
 
 
             }
@@ -56,6 +73,8 @@ public class MainActivity2 extends AppCompatActivity  {
     }
 
 
-
-
+    public void backFunction(View view) {
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
+    }
 }
