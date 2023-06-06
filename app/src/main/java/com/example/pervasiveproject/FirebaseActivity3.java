@@ -44,11 +44,17 @@ public class FirebaseActivity3 extends AppCompatActivity {
         String id = u_id.getText().toString().trim();
         String name = u_name.getText().toString().trim();
 
+        data dt= new data(id,name);
+
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("List");
+        myRef.child(id).setValue(dt);
+        u_id.setText(" ");
+        u_name.setText(" ");
+        Toast.makeText(this, "Data inserted", Toast.LENGTH_SHORT).show();
 
-//        myRef.setValue(id.getText().toString());
+
 
     }
 }
